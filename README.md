@@ -59,22 +59,34 @@ Invalid email domains are rejected with a validation error.
 ## Project Structure
 
 ```text
-patient-management-api/
+Patient Management System/
 │
 ├── Database/
+│   ├── __init__.py
 │   ├── database_engine.py
 │   └── database_models.py
 │
-├── Pydantic/
-│   └── models.py
-│
-├── Routers/
-│   ├── create.py
-│   ├── get.py
-│   ├── update.py
+├── Delete_Router/
+│   ├── __init__.py
 │   └── delete.py
 │
-├── main.py
-├── requirements.txt
+├── Get_Router/
+│   ├── __init__.py
+│   └── get.py
+│
+├── Post_Router/
+│   ├── __init__.py
+│   └── post.py
+│
+├── Put_router/
+│   ├── __init__.py
+│   └── put.py
+│
+├── Pydantic/
+│   ├── __init__.py
+│   └── models.py
+│
 ├── .gitignore
-└── README.md
+├── main.py
+├── README.md
+└── requirements.txt
